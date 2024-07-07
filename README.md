@@ -1,7 +1,7 @@
-# Responsive-Web-Design-Projects
+# Responsive Web Design Course Projects
 
-Projects completed to earn my Responsive Web Design Course Certification from freeCodeCamp
+_Projects I completed to earn my Responsive Web Design Course Certification from freeCodeCamp._
 
 Certificate:
-<img src="Certificate.png"></img>
+<p><img src="Certificate.png" height=400px width=500px></img></p>
 
