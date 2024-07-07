@@ -1,0 +1,61 @@
+<!-- FILEHEADER
+    This is the first project I made on my own in this course.
+    Author: Annie Zhao
+-->
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <body>
+      <h1 id = "title">Survey Form</h1>
+      <p id = "description">Please fill out this survey</p>
+      <form id = "survey-form">
+        
+        <fieldset>
+          <!-- Introduction section-->
+        <label for = "name-label" id= "name-label">Please enter your name: <input type = "text" id = "name" placeholder = "John Doe" required></label>
+        <label for = "email-label" id = "email-label">Please enter your email: <input type = "email" id = "email" placeholder = "johndoe@gmail.com" required></label>
+        <label for = "number-label" id = "number-label">What is your age: <input type = "number" id = "number" min = 0 max = 120 placeholder = "0-120" required></label>
+        </fieldset>
+
+        <fieldset>
+           <!-- Day section-->
+        <label for="dropdown">Which day did you attend? <select id="dropdown">
+            <option value = "">Select option</option>
+            <option value = "1">April 1st</option>
+            <option value = "2">April 2nd</option>
+            <option value = "3">April 3rd</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+           <!-- Satisfaction section-->
+          <legend>Are you satisfied with your experience? </legend>
+            <label for="satisfied"><input id="satisfied" type="radio" name="satisfaction-value" class="inline" value = "satisfied" /> Yes</label>
+            <label for="Somewhat"><input id="somewhat" type="radio" name="satisfaction-value" class="inline" value = "somewhat"/> Somewhat</label>
+            <label for="No"><input id="not-satisfied" type="radio" name="satisfaction-value" class="inline" value = "not-satisfied" /> No</label>
+        </fieldset>
+
+        
+        <fieldset>
+           <!-- Referral section-->
+           <legend>How did you hear about us?</legend>
+            <label for="friend"><input id="friend" type="checkbox" name="friend" value = "referral-value" class="inline" /> Friend</label>
+            <label for="family"><input id="family" type="checkbox" name="family" value = "referral-value" class="inline" /> Family</label>
+            <label for="colleague"><input id="colleague" type="checkbox" name="colleague" value = "referral-value" class="inline" /> Colleague</label>
+            <label for="social-media"><input id="social-media" type="checkbox" name="family" value = "referral-value" class="inline" /> Social Media</label>
+            <label for="our-website"><input id="our-website" type="checkbox" name="our-website" value = "referral-value" class="inline" /> Our Website</label>
+            <label for="other"><input id="other" type="checkbox" name="other" value = "referral-value" class="inline" /> Other</label>
+        </fieldset>
+
+        
+        <fieldset>
+           <label for="text-area">Additional comments:
+            <textarea id="text-area" name="text-area" rows="3" cols="30"></textarea>
+        </fieldset>
+
+      <input type = "submit" value = "Submit" id = "submit"/>
+      </form>
+    </body>
+  </head>
+</html>
