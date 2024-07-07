@@ -1,0 +1,75 @@
+<!--FILE HEADER
+This is the another project I made in the course. I was instructed
+to create a Technical Documentation Page, so I created a review sheet
+for my Discrete Mathematics course.-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Midterm 2 review</title>
+    <link rel="stylesheet" href="/Users/annie/Documents/GitHub/Responsive-Web-Design-Projects/Discrete Math Review Page/Review_Page.css"/>
+  </head>
+    <nav id="navbar">
+      <header class="navbar-header">Exam 2</header>
+      <a href="#Asymptotics" class="nav-link">Asymptotics</a>
+      <a href="#Algorithm_Complexities" class="nav-link">Algorithm Complexities</a>
+      <a href="#Induction" class="nav-link">Induction</a>
+      <a href="#Correctness_Iterative" class="nav-link">Correctness Iterative</a>
+      <a href="#Correctness_Recursive" class="nav-link">Correctness Recursive</a>
+
+    </nav>
+    
+    <main id="main-doc">
+      <section class="main-section" id="Asymptotics">
+        <header id="asymptotics-header">Asymptotics</header>
+        <p><span class="bold">Asymptotic growth:</span> </p>      
+        <code>how fast the output f(n) grows as input n grows</code>
+
+        <p><span class="bold">Big-O:</span> upper-bound; </p>
+        <code>f(n) is O(g(n)) if there's constant c, n0 such that f(n)<=c*g(n) for n > n0; f(n) grows at most as fast as g(n)</code>
+        <p><span class="bold">Big-Omega:</span> lower-bound; </p>
+        <code>f(n) is Omega(g(n)) if there's constant c, n0 such that f(n)>=c*g(n) for n > n0; f(n) grows at least as fast as g(n)</code>
+        <p></p>
+
+        <p><span class="bold">Big-Theta:</span></p>
+        <code>f(n) is theta(g(n)) if it is O(g(n)) and Omega(g(n))</code>
+        <p></p>
+
+      </section>
+
+      <section class="main-section"id="Algorithm_Complexities">
+        <header id="algorithm-header">Algorithm Complexities</header>
+
+        <p># of atomic operations performed with a loop:</p>
+        <code>f(n)=c*n + d = theta(n)</code>
+        <p><span class="bold">c:</span> constant # of operations per iteration</p>
+        <p><span class="bold">d:</span> constant # of operatuons performed before & after the loop</p>
+       
+      </section>
+
+      <section class="main-section" id="Induction">
+        <header id="induction-header">Induction</header>
+        <ol>
+          <li> <p>State you're proving by induction. Define P(n) in terms of the variable</p> </li>
+       <li><p>Base case - prove P(initial #) holds</p></li>
+        <li><p>Inductive step - Inductive hypothesis assumes P(k) holds, use it to show that P(k+1) also holds</p></li>
+        <li><p>Conclude we've proved statement by induction for all n>=0</p></li>
+        </ol>
+      </section>
+
+      <section class="main-section" id="Correctness_Iterative">
+        <header id="iterative-header">Correctness Iterative</header>
+        <ol>
+        <li><p><span class="bold">Loop Invariants:</span> prove the given ones (i.e. relationship between variables that doens't change, use induction on the # of loop invariants</p></li>
+        <li><p><span class="bold">Partial Correctness:</span> Assume input is valid and program terminates, use loop invariants to argue program returns correct result</p></li>
+      <li><p><span class="bold">Termination:</span> use loop invariants to argue loop terminates, consider quantity that decreases each iteration, so eventually loop will stop when exit condition is met.</p></li>
+      </ol>
+      </section>
+      <section class="main-section" id="Correctness_Recursive">
+        <header id="recursive-header">Correctness Recursive</header>
+
+        <p><span class="bold">1) Partial Correctness:</span> Assume input is valid and program terminates, show correct result is returned w/out recursive calls, show input to recursive call is valid, assume recursive call returns correct result & show then that whole program returns the correct result.</p>
+      </section>
+      <p><span class="bold">2) Termination:</span> show the chain of calls ends, use induction on a quantity that decreases with each call.</p>
+      </section>
+  </main
+</html>

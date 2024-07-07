@@ -1,0 +1,61 @@
+/* FILE HEADER
+This is the another project I made in the course. I was instructed
+to create a Technical Documentation Page, so I created a review sheet
+for my Discrete Mathematics course.
+
+*/@media (max-width: 500px){
+    html{
+      scroll-behavior: smooth;
+    }
+    main{
+      width: 60%;
+    }
+  }
+  
+  nav{
+    float: left;
+    display: block;
+    border: 2px solid black;
+    padding: 10px;
+    top: 0;
+    left: 0;
+    width: 25%;
+  }
+  
+  nav a{
+    border-bottom: 1px solid black;
+    padding: 20px;
+  }
+  .nav-link{
+    display: block;
+    color: black;
+  }
+  
+  .nav-link:hover{
+    color: blue;
+  }
+  
+  main{
+    float: top;
+    margin-left: 30%;
+    top: 0;
+    margin-top: 0;
+    padding: 20px;
+  }
+  
+  header{
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline;
+  }
+  .bold{
+    font-weight: bold;
+  }
+  
+  code{
+    background-color: #d3d3d3;
+  }
+  
+  code:hover{
+    background-color: #ffffff
+  }
